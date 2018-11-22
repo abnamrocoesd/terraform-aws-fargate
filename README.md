@@ -5,10 +5,10 @@ Terraform module to deploy an ECS cluster with Fargate launch type.
 ```
 module "fargate" {
   source                               = "github.com/abnamrocoesd/terraform-aws-fargate"
-  cluster_name                         = "${local.cluster_name}"
-  app_name                             = "${local.app_name}"
-  app_image                            = "${local.app_image}"
-  fargate_cpu                          = "${local.fargate_cpu}"
-  fargate_memory                       = "${local.fargate_memory}"
+  cluster_name                         = "${var.cluster_name}"
+  app_name                             = "${var.app_name}"
+  app_image                            = "${var.app_image}"
+  fargate_cpu                          = "${var.fargate_cpu}"
+  fargate_memory                       = "${var.fargate_memory}"
 }
 ```
