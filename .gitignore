@@ -1,0 +1,12 @@
+*.tfvars
+*.tfstate*
+.terraform/
+**/inspec.lock
+*.gem
+.kitchen/
+.kitchen.local.yml
+Gemfile.lock
+terraform.tfstate.d/
+.idea/
+*.iml
+.DS_Store
